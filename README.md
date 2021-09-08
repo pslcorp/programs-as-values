@@ -7,6 +7,7 @@ Source code of the _"What is the programs as values paradigm and why you should 
 + **Slides**: https://perficient-my.sharepoint.com/:p:/p/luis\_mejias/Ec7p4V7B7-JNvzUi7SskG8cBjQbMvI4VxK2UBr4dbaAW2g?e=HkMS1d
 + **Programs as Values series _(Fabio Labella)_**: https://systemfw.org/archive.html
 + **Functional Programming with Effects _(Rob Norris)_**: https://www.youtube.com/watch?v=30q6BkBv5MY&ab_channel=ScalaDaysConferences
++ **What is an Effect? _(Adam Rosien)_**: https://www.inner-product.com/posts/what-is-an-effect/
 + **Why FP**: https://gist.github.com/BalmungSan/bdb163a080af54d3713e9e7c4a37ff51
 
 ## Extras
