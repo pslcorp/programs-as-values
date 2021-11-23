@@ -18,7 +18,7 @@ Referential transparency is a property of expressions,
 which dictates that you can always replace a variable with the expression it refers,
 without altering in any way the behaviour of the program.<br>
 In the same way, you can always give a name to any set of expressions,
-and use this new variable in all the places were the same set of expressions was used;
+and use this new variable in all the places where the same set of expressions was used;
 and, again, the behaviour of the program must remain the same.
 
 Let's see in practice what does that means:
@@ -30,7 +30,7 @@ val result = first + first
 println(result)
 ```
 
-This little program will print `2` since `first `refers to the `head` of `data`; which is `1`<br>
+This little program will print `2` since `first` refers to the `head` of `data`; which is `1`<br>
 Now, let's see what happens if we replace `first` with its expression.
 
 ```scala
@@ -103,10 +103,10 @@ val h: A => F[C] = { a: A =>
 ```
 
 Nevertheless, this requires the assumption that such `flatMap` function exists and has the type signature we want,
-that is what Monads are, a Monad is just a triplet pf a:
+that is what Monads are, a Monad is just a triplet of a:
 + A type constructor _(`F[_]`)_
 + A `flatMap(fa: F[A])(f: A => F[B]): F[B]` implementation for that type constructor _(and also `pure(a: A): F[A]`)_
-+ A proof that such implementation satisfy some laws
++ A proof that such implementation satisfies some laws
 
-More importantly, such laws guarantee that such `flatMap` function somehow represents the concept of sequence,
-meaning that for `IO` `flatMap` always mean do this and then do that, just like a `;` on imperative languages.
+More importantly, such laws guarantee that such `flatMap` function somehow represents the concept of sequence.
+Meaning that for `IO` `flatMap` always means do this and then do that, just like a `;` on imperative languages.
