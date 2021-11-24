@@ -4,7 +4,8 @@ Source code of the _"What is the programs as values paradigm and why you should 
 
 ## Links
 
-+ **Slides**: https://perficient-my.sharepoint.com/:p:/p/luis\_mejias/Ec7p4V7B7-JNvzUi7SskG8cBjQbMvI4VxK2UBr4dbaAW2g?e=HkMS1d
++ **Slides** _(only Perficient)_: https://perficient-my.sharepoint.com/:p:/p/luis_mejias/Ec7p4V7B7-JNvzUi7SskG8cBgQP_yjki45_a9Q03jVLhIw?e=p5AleC
++ **Presentation recording** _(only Perficient)_: https://morfeo.psl.com.co/training/?sfwd-lessons=programs-as-values
 + **Programs as Values series _(Fabio Labella)_**: https://systemfw.org/archive.html
 + **Functional Programming with Effects _(Rob Norris)_**: https://www.youtube.com/watch?v=30q6BkBv5MY&ab_channel=ScalaDaysConferences
 + **What is an Effect? _(Adam Rosien)_**: https://www.inner-product.com/posts/what-is-an-effect/
