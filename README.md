@@ -4,11 +4,11 @@ Source code of the _"What is the programs as values paradigm and why you should 
 
 ## Links
 
-+ **Slides** _(only Perficient)_: https://perficient-my.sharepoint.com/:p:/p/luis_mejias/Ec7p4V7B7-JNvzUi7SskG8cBgQP_yjki45_a9Q03jVLhIw?e=p5AleC
++ **Slides**: https://perficient-my.sharepoint.com/:p:/p/luis_mejias/Ec7p4V7B7-JNvzUi7SskG8cB-IKuE7dIKAe3zd7wF13RQg?e=RU25Mg
 + **Presentation recording** _(only Perficient)_: https://morfeo.psl.com.co/training/?sfwd-lessons=programs-as-values
-+ **Programs as Values series _(Fabio Labella)_**: https://systemfw.org/archive.html
-+ **Functional Programming with Effects _(Rob Norris)_**: https://www.youtube.com/watch?v=30q6BkBv5MY&ab_channel=ScalaDaysConferences
-+ **What is an Effect? _(Adam Rosien)_**: https://www.inner-product.com/posts/what-is-an-effect/
++ **Programs as Values series** _(Fabio Labella)_: https://systemfw.org/archive.html
++ **Functional Programming with Effects** _(Rob Norris)_: https://www.youtube.com/watch?v=30q6BkBv5MY&ab_channel=ScalaDaysConferences
++ **What is an Effect?** _(Adam Rosien)_: https://www.inner-product.com/posts/what-is-an-effect/
 + **Why FP**: https://gist.github.com/BalmungSan/bdb163a080af54d3713e9e7c4a37ff51
 
 ## Extras
