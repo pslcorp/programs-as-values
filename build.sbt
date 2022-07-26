@@ -1,7 +1,10 @@
 name := "programs-as-values"
 version := "1.0.0"
-scalaVersion := "2.13.6"
+scalaVersion := "2.13.8"
 
-libraryDependencies += "org.typelevel" %% "cats-effect" % "3.2.5"
+libraryDependencies ++= Seq(
+  "org.typelevel" %% "cats-core" % "2.8.0",
+  "org.typelevel" %% "cats-effect" % "3.3.14"
+)
 
-addCompilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1")
+run / fork := true
