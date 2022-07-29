@@ -1,15 +1,16 @@
 # Programs as Values
 
-Source code of the _"What is the programs as values paradigm and why you should care?"_ presentation.
+Source code of the _"Programs as Values: The foundations of next-gen concurrent programming"_ tech talk.
 
 ## Links
 
-+ **Slides**: https://perficient-my.sharepoint.com/:p:/p/luis_mejias/Ec7p4V7B7-JNvzUi7SskG8cB-IKuE7dIKAe3zd7wF13RQg?e=RU25Mg
-+ **Presentation recording** _(only Perficient)_: https://morfeo.psl.com.co/training/?sfwd-lessons=programs-as-values
++ **Slides**: https://perficient-my.sharepoint.com/:p:/p/luis_mejias/EUqvic_6kUJCr8q0ogTRjp8BCBROZstVkaosgd1WlEIPjA
 + **Programs as Values series** _(Fabio Labella)_: https://systemfw.org/archive.html
++ **The case for effect systems** _(Daniel Spiewak)_: https://www.youtube.com/watch?v=qgfCmQ-2tW0
++ **Streams - Your New Favorite Primitive** _(Ryan Peters)_: https://www.youtube.com/watch?v=BZ8O6T7Y1UE
 + **Functional Programming with Effects** _(Rob Norris)_: https://www.youtube.com/watch?v=30q6BkBv5MY&ab_channel=ScalaDaysConferences
 + **What is an Effect?** _(Adam Rosien)_: https://www.inner-product.com/posts/what-is-an-effect/
-+ **Why FP**: https://gist.github.com/BalmungSan/bdb163a080af54d3713e9e7c4a37ff51
++ **Why FP** _(Luis Miguel Mejía Suárez)_: https://gist.github.com/BalmungSan/bdb163a080af54d3713e9e7c4a37ff51
 
 ## Extras
 
@@ -18,8 +19,8 @@ Source code of the _"What is the programs as values paradigm and why you should 
 Referential transparency is a property of expressions,
 which dictates that you can always replace a variable with the expression it refers,
 without altering in any way the behaviour of the program.<br>
-In the same way, you can always give a name to any set of expressions,
-and use this new variable in all the places where the same set of expressions was used;
+In the same way, you can always give a name to any expression,
+and use this new variable in all the places where the same expression was used;
 and, again, the behaviour of the program must remain the same.
 
 Let's see in practice what does that means:
@@ -32,7 +33,7 @@ println(result)
 ```
 
 This little program will print `2` since `first` refers to the `head` of `data`; which is `1`<br>
-Now, let's see what happens if we replace `first` with its expression.
+Now, let's see what happens if we replace the `first` variable with its expression.
 
 ```scala
 val data = List(1, 2, 3)
