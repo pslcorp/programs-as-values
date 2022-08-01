@@ -67,7 +67,7 @@ object Basics2 extends IOApp.Simple {
 
 /** Program 3: Error handling. */
 object Basics3 extends IOApp.Simple {
-  final case object Failure extends Throwable("Fatal")
+  final case object Failure extends Throwable("Faliure")
 
   override final val run: IO[Unit] =
     Stream(1, 2, 3).evalMap {

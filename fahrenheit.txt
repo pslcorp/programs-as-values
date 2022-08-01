@@ -1,4 +1,4 @@
-// this file contains a list of temperatures in degrees fahrenheit 
+// this file contains a list of temperatures in degrees fahrenheit
 18.0
 17.9
 25.3
@@ -671,5 +671,3 @@
 72
 64.0
 99
-
-

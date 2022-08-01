@@ -7,21 +7,19 @@ import scala.io.Source
 
 /** Program 1: Sequential composition. */
 object Basics1_1 extends IOApp.Simple {
-  val myIO: IO[Unit] = IO {
-    println("Hello, World!")
-  }
+  val myIO: IO[Unit] =
+    IO.println("Hello, World!")
 
   override final val run: IO[Unit] =
     myIO.flatMap(_ => myIO)
 }
 
 object Basics1_2 extends IOApp.Simple {
-  val myIO: IO[Unit] = IO {
-    println("Hello, World!")
-  }
+  val myIO: IO[Unit] =
+    IO.println("Hello, World!")
 
   override final val run: IO[Unit] =
-    myIO >> myIO >> myIO
+    myIO >> myIO >> myIO >> myIO >> myIO
 }
 // ----------------------------------------------
 
@@ -47,11 +45,11 @@ object Basics3_1 extends IOApp.Simple {
   val ioA: IO[Int] =
     IO.sleep(1.second) >> IO.println("Running ioA").as(1)
 
-  val ioB: IO[Int] =
-    IO.sleep(1.second) >> IO.println("Running ioB").as(2)
+  val ioB: IO[String] =
+    IO.sleep(1.second) >> IO.println("Running ioB").as("Balmung")
 
-  val ioC: IO[Int] =
-    IO.sleep(1.second) >> IO.println("Running ioC").as(3)
+  val ioC: IO[Boolean] =
+    IO.sleep(1.second) >> IO.println("Running ioC").as(true)
 
   override final val run: IO[Unit] =
     (ioA, ioB, ioC).parTupled.flatMap {

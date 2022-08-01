@@ -59,6 +59,6 @@ object Example {
         num(z)
       )).resultOr(-1)
 
-    println(s"The result it: ${equation(100, 10, 5)}")
+    println(s"The result is: ${equation(100, 10, 5)}")
   }
 }

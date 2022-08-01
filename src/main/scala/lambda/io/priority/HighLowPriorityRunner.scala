@@ -24,7 +24,7 @@ object HighLowPriorityRunner {
 
       val processOneJob =
         config.rateLimiter.acquire >>
-        supervisor.supervise(nextJob >> config.rateLimiter.release)
+        supervisor.supervise(nextJob.guarantee(config.rateLimiter.release))
 
       processOneJob.foreverM.void
     }

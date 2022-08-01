@@ -17,13 +17,13 @@ object Main extends IOApp.Simple {
       Queue.unbounded[IO, IO[Unit]],
       Semaphore[IO](n = 2)
     ).mapN(HighLowPriorityRunner.Config.apply).flatMap { config =>
-      HighLowPriorityRunner(config).background.use { _ =>
+      HighLowPriorityRunner(config).background.surround {
         List.range(0, 10).traverse_(id => config.lowPriorityJobs.offer(createJob(id, highPriority = false))) >>
         IO.sleep(100.millis) >>
         List.range(10, 15).traverse_(id => config.highPriorityJobs.offer(createJob(id))) >>
-        IO.sleep(5.seconds) >>
+        IO.sleep(4.seconds) >>
         List.range(15, 20).traverse_(id => config.highPriorityJobs.offer(createJob(id))) >>
-        IO.sleep(3.seconds)
+        IO.sleep(4.seconds)
       }
     }
 }
